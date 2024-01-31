@@ -40,7 +40,7 @@ public class RulesController {
 	@GetMapping("getRulesList")
 	public @ResponseBody ResponseEntity<GeneralResponse<List<RulesEntity>>> getRulesList()
 	{		
-		GeneralResponse res  =  rulesInterface.getRulesList();
+		GeneralResponse<List<RulesEntity>> res  =  rulesInterface.getRulesList();
 		if(res.getError() == null)
 			return new ResponseEntity<GeneralResponse<List<RulesEntity>>>(res, HttpStatus.OK);
 		else
@@ -50,7 +50,7 @@ public class RulesController {
 	@GetMapping("getSingleRule")
 	public @ResponseBody ResponseEntity<GeneralResponse<RulesEntity>> getsingleRule(@RequestParam("ruleIdPk") long ruleIdPk)
 	{		
-		GeneralResponse res  =  rulesInterface.getsingleRule(ruleIdPk);
+		GeneralResponse<RulesEntity> res  =  rulesInterface.getsingleRule(ruleIdPk);
 		if(res.getError() == null)
 			return new ResponseEntity<GeneralResponse<RulesEntity>>(res, HttpStatus.OK);
 		else
@@ -59,13 +59,13 @@ public class RulesController {
 	}
 	
 	@GetMapping("deleteRule")
-	public @ResponseBody ResponseEntity<GeneralResponse> deleteRule(@RequestParam("ruleIdPk") long ruleIdPk)
+	public @ResponseBody ResponseEntity<GeneralResponse<?>> deleteRule(@RequestParam("ruleIdPk") long ruleIdPk)
 	{		
-		GeneralResponse res  =  rulesInterface.deleteRule(ruleIdPk);
+		GeneralResponse<?> res  =  rulesInterface.deleteRule(ruleIdPk);
 		if(res.getError() == null)
-			return new ResponseEntity<GeneralResponse>(res, HttpStatus.OK);
+			return new ResponseEntity<GeneralResponse<?>>(res, HttpStatus.OK);
 		else
-			return new ResponseEntity<GeneralResponse>(res, HttpStatus.INTERNAL_SERVER_ERROR);			
+			return new ResponseEntity<GeneralResponse<?>>(res, HttpStatus.INTERNAL_SERVER_ERROR);			
 	
 	}
 
