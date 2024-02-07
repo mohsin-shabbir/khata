@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.khata.onsite.common.GeneralResponse;
 import com.khata.onsite.entities.RulesEntity;
+import com.khata.onsite.in.dto.RuleRequestDTO;
 import com.khata.onsite.interfaces.RulesInterface;
 
 import jakarta.validation.Valid;
@@ -31,7 +32,7 @@ public class RulesController {
 	}
 	
 	@PostMapping("/addOrUpdateRule")
-	public GeneralResponse<?> addOrUpdateRule(@Valid @RequestBody RulesEntity rule)
+	public GeneralResponse<?> addOrUpdateRule(@Valid @RequestBody RuleRequestDTO rule)
 	{
 		GeneralResponse<?> res =  rulesInterface.addOrUpdateRule(rule);
 		return res;
