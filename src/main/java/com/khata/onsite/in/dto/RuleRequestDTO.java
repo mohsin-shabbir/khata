@@ -28,7 +28,8 @@ public class RuleRequestDTO {
 	@NotNull(message="Description is Required")
 	public String ruleDesc;	
 	
-	public boolean ruleStatus;
+	public boolean status;
+	
 	
 	public int ruleIdPk;
 	

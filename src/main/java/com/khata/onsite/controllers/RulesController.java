@@ -32,10 +32,13 @@ public class RulesController {
 	}
 	
 	@PostMapping("/addOrUpdateRule")
-	public GeneralResponse<?> addOrUpdateRule(@Valid @RequestBody RuleRequestDTO rule)
+	public @ResponseBody ResponseEntity<GeneralResponse<?>> addOrUpdateRule(@Valid @RequestBody RuleRequestDTO rule)
 	{
 		GeneralResponse<?> res =  rulesInterface.addOrUpdateRule(rule);
-		return res;
+		if(res != null && res.getStatus().equals("200"))
+			return new ResponseEntity<GeneralResponse<?>>(res, HttpStatus.OK);
+		else
+			return new ResponseEntity<GeneralResponse<?>>(res, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
 	@GetMapping("getRulesList")

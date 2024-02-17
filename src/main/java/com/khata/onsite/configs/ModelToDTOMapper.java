@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-public class ModleToDTOMapper {
+public class ModelToDTOMapper {
     @Bean
     public ModelMapper modelMapper() {
         return new ModelMapper();

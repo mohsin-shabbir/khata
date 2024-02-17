@@ -2,7 +2,6 @@ package com.khata.onsite.services;
 
 import java.util.List;
 
-import com.khata.onsite.configs.MyDataRestConfig;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +12,6 @@ import com.khata.onsite.entities.RulesEntity;
 import com.khata.onsite.in.dto.RuleRequestDTO;
 import com.khata.onsite.interfaces.RulesInterface;
 import com.khata.onsite.repositories.RulesRepository;
-
-import jakarta.transaction.Transactional;
 
 @Service
 public class RulesService implements RulesInterface {
@@ -35,7 +32,6 @@ public class RulesService implements RulesInterface {
 	
 
 	@Override
-	@Transactional
 	public GeneralResponse<?> addOrUpdateRule(RuleRequestDTO rule) {
 		GeneralResponse<?> res = new GeneralResponse<>();
 		try {

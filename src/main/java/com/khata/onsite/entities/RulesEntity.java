@@ -40,4 +40,5 @@ public class RulesEntity extends BaseEntity{
 	@Column(name="description" , length = 255)
 	public String ruleDesc;	
 	
+	
 }

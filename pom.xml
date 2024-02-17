@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.30</version>
+			
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -50,11 +50,29 @@
 
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper  CONVERT DTO TO ENTITY-->
+		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper
+		CONVERT DTO TO ENTITY-->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
 			<version>3.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper	For
+		Interceptors-->
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io Required
+		for loggin JSON -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.15.1</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security  Required for spring boot basic security-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>	
 		</dependency>
 
 
