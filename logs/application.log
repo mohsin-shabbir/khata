@@ -993,3 +993,5 @@ This generated password is for development use only. Your security configuration
 2024-02-17 12:03:47.021 INFO  - LAP-NFS1192 - Tomcat started on port(s): 9010 (http) with context path '/api'
 2024-02-17 12:03:47.030 INFO  - LAP-NFS1192 - Started KhataApplication in 5.577 seconds (process running for 6.416)
 2024-02-17 12:03:58.852 INFO  - LAP-NFS1192 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-17 18:38:15.387 WARN  - LAP-NFS1192 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h29s401ms945µs100ns).
+2024-02-19 08:49:45.037 WARN  - LAP-NFS1192 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d14h11m52s370ms677µs400ns).

@@ -34,3 +34,5 @@ build/
 .vscode/
 *.class
 src/main/resources/application.properties
+logs/application.log
+logs/warning.log

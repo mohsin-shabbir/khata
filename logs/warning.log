@@ -173,3 +173,5 @@ Using generated security password: 64ce3a8a-1008-4024-bdb2-c591f0c0c64d
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
+2024-02-17 18:38:15.387 WARN  - LAP-NFS1192 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h29s401ms945µs100ns).
+2024-02-19 08:49:45.037 WARN  - LAP-NFS1192 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d14h11m52s370ms677µs400ns).
