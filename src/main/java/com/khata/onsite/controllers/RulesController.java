@@ -22,7 +22,7 @@ import jakarta.validation.Valid;
 
 @CrossOrigin
 @RestController
-@RequestMapping("rules")
+@RequestMapping("api/rules")
 public class RulesController {
 	
 	private RulesInterface rulesInterface;

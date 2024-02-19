@@ -175,3 +175,73 @@ This generated password is for development use only. Your security configuration
 
 2024-02-17 18:38:15.387 WARN  - LAP-NFS1192 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h29s401ms945µs100ns).
 2024-02-19 08:49:45.037 WARN  - LAP-NFS1192 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d14h11m52s370ms677µs400ns).
+2024-02-19 11:33:55.571 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 11:33:56.180 WARN  - LAP-NFS1192 - 
+
+Using generated security password: a265e583-c97f-49b2-873a-43eac5a41e42
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 11:35:12.347 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 11:35:12.885 WARN  - LAP-NFS1192 - 
+
+Using generated security password: e3e6f104-8215-4ca6-aad0-4468f7b931c1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 11:43:07.014 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 11:43:07.743 WARN  - LAP-NFS1192 - 
+
+Using generated security password: 0cf811bf-fcea-4566-a781-b53f347b3ad6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 11:44:42.853 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 11:44:43.431 WARN  - LAP-NFS1192 - 
+
+Using generated security password: 803a5606-c689-47cc-9f00-cf781e032e5d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 11:45:32.695 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 11:45:33.274 WARN  - LAP-NFS1192 - 
+
+Using generated security password: da3bb4be-e0f8-468b-90ae-9f8627420202
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 14:07:18.954 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 14:07:19.869 WARN  - LAP-NFS1192 - 
+
+Using generated security password: 2ee5b0b6-91f9-4224-8d42-6a5a8309bf16
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 17:33:17.622 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 17:33:18.488 WARN  - LAP-NFS1192 - 
+
+Using generated security password: 853d23ce-b12f-4110-a524-f588a47863a9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 17:34:07.446 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 17:34:08.188 WARN  - LAP-NFS1192 - 
+
+Using generated security password: 416b7391-4b36-4cf8-b780-ca20e887603e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 17:35:31.229 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 17:35:31.946 WARN  - LAP-NFS1192 - 
+
+Using generated security password: ce25fd23-1019-43de-ac57-517caf7c1541
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-02-19 17:50:06.119 WARN  - LAP-NFS1192 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19 17:50:07.376 WARN  - LAP-NFS1192 - 
+
+Using generated security password: c31cd569-0acd-44d4-9d07-1106961eaac1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
