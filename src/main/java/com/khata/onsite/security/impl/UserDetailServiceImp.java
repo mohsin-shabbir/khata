@@ -1,17 +1,17 @@
-package com.khata.onsite.security.service;
+package com.khata.onsite.security.impl;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.khata.onsite.security.repository.UsersRepository;
+import com.khata.onsite.security.UsersRepository;
 
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class UserSeriviceImp implements UserDetailsService{
+public class UserDetailServiceImp implements UserDetailsService{
 	
 	private final UsersRepository repository;	
 	

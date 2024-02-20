@@ -2,15 +2,11 @@ package com.khata.onsite;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-
-import com.khata.onsite.configs.HttpLoggingFilter;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.khata.onsite.configs","com.khata.onsite.controllers","com.khata.onsite.services", "com.khata.onsite.interfaces","com.khata.onsite.entities","com.khata.onsite.repositories"})
+@ComponentScan(basePackages = {"com.khata.onsite.security","com.khata.onsite.configs","com.khata.onsite.controllers","com.khata.onsite.services", "com.khata.onsite.interfaces","com.khata.onsite.entities","com.khata.onsite.repositories"})
 public class KhataApplication {
 
 	public static void main(String[] args) {

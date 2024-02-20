@@ -14,16 +14,26 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-import jakarta.servlet.*;
+
+import org.apache.commons.io.output.TeeOutputStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.FilterConfig;
+import jakarta.servlet.ReadListener;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletInputStream;
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.WriteListener;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletRequestWrapper;
 import jakarta.servlet.http.HttpServletResponse;
-import org.apache.commons.io.output.TeeOutputStream;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
 @Component
 public class HttpLoggingFilter implements Filter {
@@ -225,7 +235,10 @@ public class HttpLoggingFilter implements Filter {
         }
 
         public String getContent() {
-            return bos.toString();
+        	if(bos != null)
+        		return bos.toString();
+        	else
+        		return "";
         }
 
         public PrintWriter getWriter() throws IOException {
@@ -235,8 +248,7 @@ public class HttpLoggingFilter implements Filter {
         public ServletOutputStream getOutputStream() throws IOException {
             if (tee == null) {
                 bos = new ByteArrayOutputStream();
-                tee = new TeeServletOutputStream(original.getOutputStream(),
-                        bos);
+                tee = new TeeServletOutputStream(original.getOutputStream(), bos);
             }
             return tee;
 
@@ -332,13 +344,11 @@ public class HttpLoggingFilter implements Filter {
             return original.encodeRedirectURL(url);
         }
 
-        @SuppressWarnings("deprecation")
-        public String encodeUrl(String url) {
+              public String encodeUrl(String url) {
             return original.encodeRedirectURL(url);
         }
 
-        @SuppressWarnings("deprecation")
-        public String encodeRedirectUrl(String url) {
+          public String encodeRedirectUrl(String url) {
             return original.encodeRedirectURL(url);
         }
 
@@ -392,7 +402,6 @@ public class HttpLoggingFilter implements Filter {
             original.setStatus(sc);
         }
 
-        @SuppressWarnings("deprecation")
         public void setStatus(int sc, String sm) {
             original.setStatus(sc);
         }

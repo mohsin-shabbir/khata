@@ -1,4 +1,4 @@
-package com.khata.onsite.security.entity;
+package com.khata.onsite.security;
 
 import java.util.Collection;
 import java.util.List;
@@ -6,8 +6,6 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
-import com.khata.onsite.security.Roles;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -22,7 +20,7 @@ import lombok.Data;
 @Entity
 @Table(name="users")
 @Data
-public class Users implements UserDetails{
+public class UsersEntity implements UserDetails{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -81,6 +79,5 @@ public class Users implements UserDetails{
 		// TODO Auto-generated method stub
 		return true;
 	}	
-	
 
 }
